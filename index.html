@@ -1,127 +1,179 @@
 <!DOCTYPE html>
 <html lang="pt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Biblioteca Triple Peaks</title>
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" href="./vendor/normalize.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-  </head>
 
-  <body>
-    <div class="page">
-      <header class="header">
-        <nav class="nav">
-          <img
-            src="./images/logo.svg"
-            alt="Logotipo da Biblioteca Triple Peaks"
-            class="nav__logo"
-          />
-          <ul class="nav__links">
-            <li>
-              <a href="#staff" class="nav__link">Escolhas do Leitor</a>
-            </li>
-            <li>
-              <a class="nav__link">Eventos</a>
-            </li>
-            <li>
-              <a class="nav__link">Seja um membro</a>
-            </li>
-            <li>
-              <a class="nav__link">Contatos</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__content">
-          <div>
-            <h1 class="header__title">Bem-vindo à Biblioteca Triple Peaks</h1>
-            <p class="header__description">
-              Temos o prazer de abrir as portas da nossa biblioteca a todos!
-              Venha expandir seus conhecimentos de desenvolvimento, ou apenas
-              use esse belo local para trabalhar ou estudar. Esse é um lugar
-              legal para estudantes legais!
-            </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biblioteca Triple Peaks</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" href="./vendor/normalize.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <nav class="nav">
+        <img src="./images/logo.svg" alt="Logotipo da Biblioteca Triple Peaks" class="nav__logo" />
+        <ul class="nav__links">
+          <li>
+            <a href="#staff" class="nav__link">Escolhas do Leitor</a>
+          </li>
+          <li>
+            <a href="#events" class="nav__link">Eventos</a>
+          </li>
+          <li>
+            <a class="nav__link">Seja um membro</a>
+          </li>
+          <li>
+            <a class="nav__link">Contatos</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__content">
+        <div>
+          <h1 class="header__title">Bem-vindo à Biblioteca Triple Peaks</h1>
+          <p class="header__description">
+            Temos o prazer de abrir as portas da nossa biblioteca a todos!
+            Venha expandir seus conhecimentos de desenvolvimento, ou apenas
+            use esse belo local para trabalhar ou estudar. Esse é um lugar
+            legal para estudantes legais!
+          </p>
+        </div>
+        <img src="./images/inside_the_library.png" alt="Ilustração 'Dentro da biblioteca'" class="header__image" />
+      </div>
+      <div class="header__footer">
+        <p class="header__address">Triple Peaks, 200 Success Avenue</p>
+      </div>
+    </header>
+
+    <main class="content">
+      <section id="staff" class="staff">
+        <h2 class="staff__title">Escolhas do Leitor</h2>
+        <p class="staff__subtitle">que nossos leitores adoram</p>
+        <ul class="staff__cards">
+          <li class="card">
+            <div class="card__content">
+              <h3 class="card__title">A Bolsa Amarela</h3>
+              <p class="card__text">
+                Ele conta a história de uma menina chamada Raquel que se sente
+                sufocada pelas vontades dos adultos e pelas regras que limitam
+                sua vida. Ela guarda seus desejos escondidos dentro de uma
+                bolsa amarela. A narrativa mistura fantasia e realidade,
+                mostrando personagens mágicos que a ajudam a lidar com seus
+                conflitos. A obra fala sobre identidade, liberdade e a
+                importância de dar voz aos próprios sonhos.
+              </p>
+              <p class="card__footer">Lygia Bojunga</p>
+            </div>
+          </li>
+
+          <li class="card">
+            <div class="card__content">
+              <h3 class="card__title">A Empregada</h3>
+              <p class="card__text">
+                Millie Calloway consegue um emprego como empregada na mansão
+                dos Winchester, apesar de ter um passado problemático. Tudo
+                parece perfeito, até que a patroa começa a mostrar sua
+                verdadeira face. Millie começa a ter sentimentos que a levarão
+                a fazer coisas inimagináveis. Porém, nada é o que parece.
+              </p>
+              <p class="card__footer">Freida McFadden</p>
+            </div>
+          </li>
+
+          <li class="card">
+            <div class="card__content">
+              <h3 class="card__title">Jogos Vorazes</h3>
+              <p class="card__text">
+                Neste livro, a Capital obriga os distritos a enviar jovens
+                para uma arena mortal transmitida como espetáculo. O objetivo
+                é humilhar e lembrar a todos do poder ditatorial que mantém a
+                população na miséria. Katniss, ao se oferecer no lugar da
+                irmã, enfrenta não só a violência do jogo, mas também a
+                crueldade de um sistema injusto. Sua coragem desperta
+                esperança e o início de uma revolta contra a opressão.
+              </p>
+              <p class="card__footer">Suzanne Collins</p>
+            </div>
+          </li>
+
+          <li class="card">
+            <div class="card__content">
+              <h3 class="card__title">Sob a Redoma</h3>
+              <p class="card__text">
+                Sem maiores explicações, a cidade de Chester’s Mill é isolada
+                do mundo por uma redoma invisível e indestrutível. Sem contato
+                com o exterior, os moradores enfrentam a escassez de recursos
+                e o caos. O poder local cai nas mãos de pessoas corruptas e
+                violentas, enquanto a pressão revela tanto a crueldade quanto
+                a solidariedade humana.
+              </p>
+              <p class="card__footer">Stephan King</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="events" id="events">
+        <div class="events__content">
+          <h2 class="events__heading">Próximos eventos:</h2>
+          <h3 class="events__title">
+            Em homenagem à Joan Feynman: Mulheres na Astrofísica
+          </h3>
+          <div class="event-info events__info-section">
+            <div class="event-info__item">
+              <img src="./images/icon_calendar.svg" alt="Calendar icon" class="event-info__icon" />
+              <p class="event-info__text">Segunda-feira, 12 de janeiro</p>
+            </div>
+            <div class="event-info__item">
+              <img src="./images/icon_pin.svg" alt="Pin icon" class="event-info__icon" />
+              <p class="event-info__text">
+                Sala de Conferências da Biblioteca Triple Peaks e Online
+              </p>
+            </div>
           </div>
-          <img
-            src="./images/inside_the_library.png"
-            alt="Ilustração 'Dentro da biblioteca'"
-            class="header__image"
-          />
+          <p class="events__description">
+            Neste evento, que homenageia a pessoa que inspirou o nome da biblioteca, vamos ter uma
+            palestra que vai nos levar para uma jornada explorando alguns das pesquisadoras mais
+            proeminentes no mundo da ciência espacial. É
+            fácil aceitar o equívoco de que esse campo era em sua maioria
+            dominado por homens, mas nossa palestra visa mudar essa noção e
+            provar que esse não é o caso desde, pelo menos,
+            o século XVIII.
+          </p>
+          <a href="#" class="events__more">Mais eventos &rarr;</a>
         </div>
-        <div class="header__footer">
-          <p class="header__address">Triple Peaks, 200 Success Avenue</p>
+        <div class="events__cover">
+          <img class="events__image" src="images/cafe.png" alt="Ilustração 'Dentro da cafeteria'">
+          <div class="person person_name_feynman">
+            <p class="person__caption">Joan Feynman</p>
+            <img class="person__image person__image_size_l" src="./images/person_feynman.png" alt="retrato Joan Feyman">
+          </div>
+          <div class="person person_name_burbidge">
+            <p class="person__caption">Margaret Burbidge</p>
+            <img class="person__image person__image_size_m" src="./images/person_burbidge.png"
+              alt="retrato Margaret Burbidge">
+          </div>
+          <div class="person person_name_cannon">
+            <img class="person__image person__image_size_s" src="./images/person_cannon.png"
+              alt="retrato Annie Jump Cannon">
+            <p class="person__caption">Annie Jump Cannon</p>
+          </div>
+          <div class="person person_name_mitchell">
+            <img class="person__image person__image_size_s" src="./images/person_mitchell.png"
+              alt="retrato Maria Mitchell">
+            <p class="person__caption">Maria Mitchell</p>
+          </div>
+          <div class="person person_name_tarter">
+            <p class="person__caption">Jill Tarter</p>
+            <img class="person__image person__image_size_m" src="./images/person_tarter.png" alt="retrato Jill Tarter">
+          </div>
+
         </div>
-      </header>
+        <!-- Comece a criar a composição aqui -->
+      </section>
+    </main>
+  </div>
+</body>
 
-      <main class="content">
-        <section id="staff" class="staff">
-          <h2 class="staff__title">Escolhas do Leitor</h2>
-          <p class="staff__subtitle">que nossos leitores adoram</p>
-          <ul class="staff__cards">
-            <li class="card">
-              <div class="card__content">
-                <h3 class="card__title">A Bolsa Amarela</h3>
-                <p class="card__text">
-                  Ele conta a história de uma menina chamada Raquel que se sente
-                  sufocada pelas vontades dos adultos e pelas regras que limitam
-                  sua vida. Ela guarda seus desejos escondidos dentro de uma
-                  bolsa amarela. A narrativa mistura fantasia e realidade,
-                  mostrando personagens mágicos que a ajudam a lidar com seus
-                  conflitos. A obra fala sobre identidade, liberdade e a
-                  importância de dar voz aos próprios sonhos.
-                </p>
-                <p class="card__footer">Lygia Bojunga</p>
-              </div>
-            </li>
-
-            <li class="card">
-              <div class="card__content">
-                <h3 class="card__title">A Empregada</h3>
-                <p class="card__text">
-                  Millie Calloway consegue um emprego como empregada na mansão
-                  dos Winchester, apesar de ter um passado problemático. Tudo
-                  parece perfeito, até que a patroa começa a mostrar sua
-                  verdadeira face. Millie começa a ter sentimentos que a levarão
-                  a fazer coisas inimagináveis. Porém, nada é o que parece.
-                </p>
-                <p class="card__footer">Freida McFadden</p>
-              </div>
-            </li>
-
-            <li class="card">
-              <div class="card__content">
-                <h3 class="card__title">Jogos Vorazes</h3>
-                <p class="card__text">
-                  Neste livro, a Capital obriga os distritos a enviar jovens
-                  para uma arena mortal transmitida como espetáculo. O objetivo
-                  é humilhar e lembrar a todos do poder ditatorial que mantém a
-                  população na miséria. Katniss, ao se oferecer no lugar da
-                  irmã, enfrenta não só a violência do jogo, mas também a
-                  crueldade de um sistema injusto. Sua coragem desperta
-                  esperança e o início de uma revolta contra a opressão.
-                </p>
-                <p class="card__footer">Suzanne Collins</p>
-              </div>
-            </li>
-
-            <li class="card">
-              <div class="card__content">
-                <h3 class="card__title">Sob a Redoma</h3>
-                <p class="card__text">
-                  Sem maiores explicações, a cidade de Chester’s Mill é isolada
-                  do mundo por uma redoma invisível e indestrutível. Sem contato
-                  com o exterior, os moradores enfrentam a escassez de recursos
-                  e o caos. O poder local cai nas mãos de pessoas corruptas e
-                  violentas, enquanto a pressão revela tanto a crueldade quanto
-                  a solidariedade humana.
-                </p>
-                <p class="card__footer">Stephan King</p>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </main>
-    </div>
-  </body>
 </html>
